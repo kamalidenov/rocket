@@ -1,0 +1,154 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.top-line
+	line-height: 50px
+	.container
+		border-bottom: 1px solid rgba(230,230,230,.58)
+
+.logo
+	font-size: 20px
+	font-family: "AlegreyaSans-Bold", sans-serif
+	text-transform: uppercase
+	.fa 
+		color: #eb4c2f
+
+
+.top-menu
+	text-align: left
+	ul
+		padding: 0
+		margin: 0
+		li 
+			list-style-type: none
+			display: inline-block
+			margin-left: 35px
+			a
+				color: #000
+				font-size: 18px
+		.active
+				border-top: 2px solid #eb4c2f
+				color: #eb4c2f
+				a 
+					color: #eb4c2f
+
+.languages
+	text-align: right
+	ul
+		padding: 0
+		margin: 0
+		li 
+			list-style-type: none
+			display: inline-block
+			margin-left: 10px
+			a 
+				color: #000
+				font-size: 16px
+
+
+.second-menu
+	line-height: 50px
+	ul
+		padding: 0
+		margin: 0
+		li 
+			display: inline-block
+			list-style-type: none
+			margin-right: 35px
+			a 
+				color: #000
+				font-size: 16px
+				&:hover
+					color: #eb4c2f
+		.active
+			a 
+				color: #808080
+
+.content-title
+	margin-bottom: 20px
+	h1 
+		font-size: 42px
+		font-family: "AlegreyaSans-Bold", sans-serif
+		margin: 0
+	a 
+		color: #000
+		text-decoration: underline
+		&:hover
+			color: #eb4c2f
+
+
+.social-items
+	.container
+		border-bottom: 1px solid #e6e6e6
+	a 
+		color: #000
+		padding: 5px 15px
+		border: 1px solid #e6e6e6
+		margin-bottom: 20px
+		.fa 
+			color: #1faee9
+			margin-right: 10px
+	
+
+
+
+.content-items
+	margin-bottom: 40px
+	.container
+		width: 75%
+		h3 
+			font-size: 24px
+		p 
+			font-size: 18px 
+		img 
+			width: 100%
+			box-shadow: 0px 1px 5px 0px #808080
+			margin-bottom: 20px
+
+footer
+	padding: 40px 0
+	.logo 
+		text-align: center
+	
+
+
+
+
+@import "media" // Always at the end
